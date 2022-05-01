@@ -63,10 +63,7 @@ h4 {
 }
 
 h5 {
-
-
-    font-size: 1rem;
-    color: red;
+  font-size: 1.25rem;
 }
 
 h6 {
@@ -130,6 +127,11 @@ nav a:hover {
   background-color: var(--dark);
 }
 
+.btn:hover a,
+.pill:hover a {
+  color: var(--secondary);
+}
+
 .btn-inline {
   display: inline;
 }
@@ -150,8 +152,6 @@ nav a:hover {
   padding: 0.625rem;
   border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
 }
-
-
 
 .card-body {
   padding: 2.5%;
@@ -789,10 +789,6 @@ nav a:hover {
   background-color: var(--secondary);
 }
 
-.bg-secondary2 {
-    background-color: gold;
-}
-
 .bg-tertiary {
   background-color: var(--tertiary);
 }
@@ -904,7 +900,6 @@ nav a:hover {
 
 /* col-sm */
 @media screen and (min-width: 640px) {
-
   .col-sm-auto {
     flex-grow: 1;
     flex-basis: 0;
@@ -1079,36 +1074,8 @@ nav a:hover {
   }
 }
 
-
 /* col-lg */
-@media screen and (max-width: 665px) {
-    .h5absolute {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        font-size: 1rem;
-        color: red;
-        margin-left: 4.7rem;
-        margin-top: -0.85rem;
-    }
-}
-
-@media screen and (min-width: 665px) {
-    .h5absolute {
-        position: absolute;
-        margin-left: 16.2rem;
-        margin-top: .99em;
-        width: 100%;
-    }
-
-    .relative {
-        position: relative;
-        display: flex;
-    }
-}
-
 @media screen and (min-width: 992px) {
-
   nav {
     width: auto;
     justify-content: flex-end;
@@ -1206,15 +1173,6 @@ nav a:hover {
 
 /* col-xl */
 @media screen and (min-width: 1200px) {
-    /* h5 {
-        display: inline-block;
-        position: absolute;
-        margin-left: 16.2rem;
-        margin-top: .99em;
-        font-size: 1rem;
-        color: red;
-    } */
-
   .col-xl-1 {
     flex: 0 0 calc(100% * 1 / 12 - 0.5%);
   }
